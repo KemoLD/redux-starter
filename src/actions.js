@@ -8,3 +8,21 @@ export function addBug(description) {
     }
   };
 }
+
+export function removeBug(bugId) {
+    return {
+        type: actions.REMOVE_BUG,
+        payload: {
+            id: bugId,
+        },
+    };
+}
+
+export function resolveBug(bugId) {
+    return {
+        type: actions.RESOLVE_BUG,
+        payload: {
+            id: bugId,
+        },
+    };
+}
